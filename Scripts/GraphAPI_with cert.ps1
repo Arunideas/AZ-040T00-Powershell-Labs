@@ -1,7 +1,7 @@
 # Connect to Azure
 $tenantID = "34bb343b-85c5-4489-9635-0720eeeff1e3"
-$applicationID = "14a291d6-6213-4b50-b633-90c6dd03eb32"
-$thumbprint = "5F214B980DD73FEB10CF1A38C6CA9513502BFDC2"
+$applicationID = "41c74b8e-fa2e-4166-918e-76566a9aa634"
+$thumbprint = "7E7016013AA33549DA6BBF84040CB29D737CEDC4"
  
 Connect-MgGraph -ClientID $applicationID -TenantId $tenantID -CertificateThumbprint $thumbprint
  
