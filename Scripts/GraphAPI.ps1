@@ -6,7 +6,7 @@ Install-Module Microsoft.Graph
 get-command -module 
 
 Connect-MgGraph
-Connect-MgGraph -Scopes "User.Read.All","Group.ReadWrite.All,tasks.readwrite,Directory.ReadWrite.All,User.ReadWrite.All"
+Connect-MgGraph -Scopes "User.Read.All","Group.ReadWrite.All,tasks.readwrite,Directory.ReadWrite.All,User.ReadWrite.All,Teamwork.Migrate.All, ChannelMessage.ReadWrite.All"
 
 Find-MgGraphCommand -command New-MgUser | Select -First 1 -ExpandProperty Permissions
 
