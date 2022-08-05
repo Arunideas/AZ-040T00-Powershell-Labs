@@ -14,11 +14,7 @@ $user = Get-MgUser -Filter "displayName eq 'Megan Bowen'"
 
 Get-MgUser
 
-$team = Get-MgUserJoinedTeam -UserId $user.Id | where displayName -eq "retail"
 
-$channel = Get-MgTeamChannel -TeamId $team.Id | where { $_.displayName -eq "General"}
-
-New-MgTeamChannelMessage -TeamId $team.Id -ChannelId $channel.Id -Body @{ Content="Hello World" }
 
 Get-MgUser -UserId $user.id
 
@@ -109,10 +105,8 @@ $user=New-MgUser -BodyParameter $params
 
 New-MgGroupMember -GroupId $group.id -DirectoryObjectId $user.id
 
-# Roles 
+#Licensing
 
-Import-Module Microsoft.Graph.Identity.DirectoryManagement
-Get-MgDirectoryRole -All | fl 
-
+Get-MgUserLicenseDetail -UserId $user.id
 
 
