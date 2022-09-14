@@ -30,10 +30,11 @@ $ExcelObj = New-Object -comobject Excel.Application
 $ExcelObj.visible=$true
 
 $ExcelObj | fl
-$excelobj.Workbooks.Add()
-$sheet = $excelobj.Worksheets.Add()
+$workbook = $excelobj.Workbooks.Add() 
+#$sheet = $workbook.Worksheets.add()
+$activesheet = $workbook.sheets("Sheet1")
 
-$activesheet=$ExcelObj.Worksheets.item("sheet2")
+#$activesheet=$ExcelObj.Worksheets.item("sheet2")
 $activesheet.Cells(1,1).Value = "server1"
 $activesheet.Cells(1,1).text
 
@@ -47,7 +48,7 @@ $objinstance=New-Object -TypeName psobject
 
 for($j=1;$j -lt $col;$j++)
 {
-    $header=$activesheet.Cells.Item(1,$j).text
+    $header=$activesheet.Cells(1,$j).text
     Add-Member -MemberType NoteProperty -Name $header -Value $null -InputObject $objinstance
 }
 
@@ -66,11 +67,18 @@ for($i=1;$i -lt $row;$i++)
     $obj = $obj + $objinstance
 }
 
-$obj | ft
 
-$a= New-Object -TypeName System.Environment
 
-$a | select -Property *
+#---
+$File = "C:\temp\Test.xlsx"
+$ExcelObj = New-Object -comobject Excel.Application
+$ExcelObj.visible=$true
+$WorkBook = $ExcelObj.Workbooks.Open($File)
+$sheet1 = $WorkBook.Sheets("Sheet1")
+$sheet1.UsedRange.Rows.Count
+
+$WorkBook.Close($true)
+
 
 
 
