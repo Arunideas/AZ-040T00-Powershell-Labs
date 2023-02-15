@@ -18,6 +18,7 @@ After completing this lab, you'll be able to:
 
 - Open and configure the Windows PowerShell console application.
 - Open and configure the Windows PowerShell ISE application.
+- Open and configure the Windows PowerShell ISE application.
 - Find and run Windows PowerShell commands.
 - Use Windows PowerShell Help and About topics to learn new shell concepts and techniques.
 
@@ -101,7 +102,7 @@ The main tasks for this exercise are:
 
 ### Task 1: Find commands that'll accomplish specified tasks
 
-- On **LON-CL1**, ensure that you're signed in as **Adatum\\Administrator** and determine the answers to the following questions:
+- On **LON-CL1**, ensure that you're signed in as **Administrator** and determine the answers to the following questions:
 
   - What command would you run to resolve a DNS name?
   - What command would you run to make changes to a network adapter? After finding such a command, what parameter would you use to change its Media Access Control (MAC) address (on adapters that support changes to their MAC address)?
@@ -115,7 +116,7 @@ The main tasks for this exercise are:
 
 ### Task 2: Run commands to accomplish specified tasks
 
-1. Ensure you are signed in on the **LON-CL1** virtual machine as **Adatum\\Administrator**.
+1. Ensure you are signed in on the **LON-CL1** virtual machine as **Administrator**.
 
 2. Display a list of enabled Windows Firewall rules.
 
@@ -149,7 +150,7 @@ The main task for this exercise is:
 
 ### Task 1: Locate and review About help files
 
-- Ensure that you'll still signed in to **LON-CL1** as **Adatum\\Administrator** from the previous exercise, and answer the following questions:
+- Ensure that you'll still signed in to **LON-CL1** as **Administrator** from the previous exercise, and answer the following questions:
 
   - What comparison operator does Windows PowerShell use for wildcard string comparisons?
   - Are Windows PowerShell comparison operators typically case-sensitive?
