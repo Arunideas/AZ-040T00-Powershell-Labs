@@ -1,7 +1,7 @@
 ---
 lab:
     title: 'Lab A: Using PowerShell pipeline'
-    module: 'Module 3: Working with the Windows PowerShell pipeline'
+    module: 'Module 2: Working with the Windows PowerShell pipeline'
 ---
 
 # Lab: Using PowerShell pipeline
@@ -19,24 +19,6 @@ After completing this lab, you'll be able to:
 
 ## Estimated Time: 60 minutes
 
-## Lab setup
-
-Virtual machines: **AZ-040T00A-LON-DC1**, **AZ-040T00A-LON-SVR1**, and **AZ-040T00A-LON-CL1**
-
-Username: **Adatum\\Administrator**
-
-Password: **Pa55w.rd**
-
-## Lab startup
-
-1. Select **LON-DC1**.
-1. Sign in by using the following credentials:
-   - Username: **Administrator**
-   - Password: **Pa55w.rd**
-   - Domain: **Adatum**
-
-1. Repeat these steps for **LON-CL1** and **LON-SVR1**.
-
 ## Exercise 1: Selecting, sorting, and displaying data
 
 ### Exercise scenario 1
@@ -47,10 +29,6 @@ The main tasks for this exercise are:
 
 1. Display the current day of the year.
 1. Display information about installed hotfixes.
-1. Display a list of available scopes from the DHCP server.
-1. Display a sorted list of enabled Windows Firewall rules.
-1. Display a sorted list of network neighbors.
-1. Display information from the DNS name resolution cache.
 
 ### Task 1: Display the current day of the year
 
@@ -67,37 +45,6 @@ The main tasks for this exercise are:
 1. Display a list of the installed hotfixes. Display only the installation date, hotfix ID number, and name of the user who installed the hotfix.
 1. Display a list of the installed hotfixes. Display only the hotfix ID, the number of days since the hotfix was installed, and the name of the user who installed the hotfix.
 
-### Task 3: Display a list of available scopes from the DHCP server
-
-1. Using a keyword such as **DHCP** or **scope**, find a command that can display a list of Internet Protocol version 4 (IPv4) Dynamic Host Configuration Protocol (DHCP) scopes.
-1. Review the help for the command.
-1. Display a list of the available IPv4 DHCP scopes on **LON-DC1**.
-1. Display a list of the available IPv4 DHCP scopes on **LON-DC1**. This time, include only the scope ID, subnet mask, and scope name, and display the data in a single column.
-
-### Task 4: Display a sorted list of enabled Windows Firewall rules
-
-1. Using a keyword such as **rule**, find a command that can display the firewall rules.
-1. Display a list of the firewall rules.
-1. Review the help for the command that displays the firewall rules.
-1. Display a list of the firewall rules that are enabled.
-1. Display the same data in a table, making sure no information is truncated.
-1. Display a list of the enabled firewall rules. Display only the rules’ display names, the profiles they belong to, their directions, and whether they allow or deny access.
-1. Sort the list in alphabetical order first by profile and then by display name, with the results displaying in a separate table for each profile.
-
-### Task 5: Display a sorted list of network neighbors
-
-1. Using a keyword such as **neighbor**, find a command that can display the network neighbors.
-1. Review the help for the command.
-1. Display a list of the network neighbors.
-1. Display a list of the network neighbors that's sorted by state.
-1. Display a list of the network neighbors that's grouped by state, displaying only the IP address in as compact a format as possible and letting Windows PowerShell decide how to optimize the layout.
-
-### Task 6: Display information from the DNS name resolution cache
-
-1. Test your network connection to both **LON-DC1** and **LON-CL1** so that you know the Domain Name System (DNS) client cache is populated with data.
-1. Using a keyword such as **cache**, find a command that can display items from the DNS client cache.
-1. Display the DNS client cache.
-1. Display the DNS client cache. Sort the list by record name, and display only the record name, record type, and Time to Live. Use only one column to display all the data.
 
 ### Exercise 1 results
 
@@ -111,33 +58,19 @@ In this exercise, you'll use filtering to produce lists of management informatio
 
 The main tasks for this exercise are:
 
-1. Display a list of all the users in the Users container of Active Directory.
+
 1. Create a report displaying the Security event log entries that have the event ID **4624**.
-1. Display a list of the encryption certificates installed on the computer.
 1. Create a report that displays the disk volumes that are running low on space.
 1. Create a report that displays specified Control Panel items.
 
-### Task 1: Display a list of all the users in the Users container of Active Directory
 
-1. On **LON-CL1**, open **Windows PowerShell** as an administrator.
-1. Using a keyword such as **user,** find a command that can list Active Directory users.
-1. Review the help for the command and identify any mandatory parameters.
-1. Display a list of all the users in Active Directory in a format that lets you easily compare properties.
-1. Display the same list of all the users in the same format. This time, however, display only those users in the **Users** container of Active Directory. Use a search base of **"cn=Users,dc=adatum,dc=com"** for this task.
-
-### Task 2: Create a report displaying the Security event log entries that have the event ID 4624
+### Task 1: Create a report displaying the Security event log entries that have the event ID 4624
 
 1. Display only the total number of **Security** event log entries that have the event ID **4624**.
 1. Display the full list of the **Security** event log entries that have the event ID **4624**, and display only the time written, event ID, and message.
 1. Display only the 10 oldest entries in a format that lets you review the message details.
 
-### Task 3: Display a list of the encryption certificates installed on the computer
-
-1. Display a directory listing of all the items on the **CERT** drive. Include subfolders in the list.
-1. Display the list again and display the name and issuer for only the certificates that don't have a private key. Display the results in one column.
-1. Display the list again and display only the current certificates. Those certificates have a **NotBefore** date that's before today and a **NotAfter** date that's after today. Include the **NotBefore** and **NotAfter** properties in the results and display the results in a format that allows you to easily compare dates. Also, make sure that no data is truncated.
-
-### Task 4: Create a report that displays the disk volumes that are running low on space
+### Task 2: Create a report that displays the disk volumes that are running low on space
 
 1. Display a list of the disk volumes.
 1. Display a list in one column of the volumes that have more than zero bytes of free space.
@@ -146,7 +79,7 @@ The main tasks for this exercise are:
 
    > **Note:** This command might not produce any output on your lab computer if the computer has more than 10 percent free space on each of its volumes.
 
-### Task 5: Create a report that displays specified Control Panel items
+### Task 3: Create a report that displays specified Control Panel items
 
 1. Display a list of all the Control Panel items.
 1. Display the names and descriptions, sorted by name, of the Control Panel items in the **System and Security** category.
