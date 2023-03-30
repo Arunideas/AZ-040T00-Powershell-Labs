@@ -1,7 +1,7 @@
 ---
 lab:
-    title: 'Lab: Configuring Windows PowerShell, and finding and running commands' 
-    module: 'Module 1: Getting Started with Windows PowerShell'
+    title: 'Lab: Configuring Windows PowerShell' 
+    module: 'Module 1 Lesson 1: Getting Started with Windows PowerShell'
 --- 
 
 # Lab: Configuring Windows PowerShell, and finding and running commands
@@ -10,7 +10,6 @@ lab:
 
 You're an administrator who'll use Windows PowerShell to automate many administrative tasks. You must ensure that you can successfully start the correct Windows PowerShell host applications and configure them for future use by customizing their appearance.
 
-You're also preparing to complete several administrative tasks by using Windows PowerShell. You need to discover commands that you'll use to perform those tasks, run several commands to begin performing those tasks, and learn about new Windows PowerShell features that'll enable you to complete those tasks.
 
 ## Objectives
 
@@ -19,8 +18,7 @@ After completing this lab, you'll be able to:
 - Open and configure the Windows PowerShell console application.
 - Open and configure the Windows PowerShell ISE application.
 - Open and configure the Windows PowerShell ISE application.
-- Find and run Windows PowerShell commands.
-- Use Windows PowerShell Help and About topics to learn new shell concepts and techniques.
+
 
 
 ## Exercise 1: Configuring the Windows PowerShell console application
