@@ -40,7 +40,7 @@ The main tasks for this exercise are:
 
 ### Task 1: Start the console application as Administrator, and pin the Windows PowerShell icon to the taskbar
 
-1. On **LON-CL1**, start the **Windows PowerShell** application as **Administrator**. Make sure that the window title bar reads **Administrator** and doesn't include the text (x86). This indicates that it's the 64-bit console application and that an administrator is running it.
+1. On **Windows Server 2019**, start the **Windows PowerShell** application as **Administrator**. Make sure that the window title bar reads **Administrator** and doesn't include the text (x86). This indicates that it's the 64-bit console application and that an administrator is running it.
 1. Pin the Windows PowerShell icon to the taskbar.
 
 ### Task 2: Configure the Windows PowerShell console application

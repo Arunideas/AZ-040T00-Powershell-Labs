@@ -315,7 +315,7 @@ After completing this exercise, you'll have demonstrated your ability to find an
 
 ### Task 1: Locate and review About help files
 
-1. Ensure you're still signed in to **Windows Server 2019** as **Adatum\\Administrator** from the previous exercise.
+1. Ensure you're still signed in to **Windows Server 2019** as **Administrator** from the previous exercise.
 
 1. To find operators used for wildcard string comparison, in the console, enter the following command, and then press the Enter key:
 
