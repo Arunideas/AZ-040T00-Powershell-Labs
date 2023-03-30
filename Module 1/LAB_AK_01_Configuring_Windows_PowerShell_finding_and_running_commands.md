@@ -11,7 +11,7 @@ lab:
 
 ### Task 1: Start the console application as Administrator, and pin the Windows PowerShell icon to the taskbar
 
-1. On **LON-CL1**, select **Start**.
+1. On **Windows Server 2019**, select **Start**.
 1. Enter **powershell** to display the Windows PowerShell icon. Make sure that the icon name displays **Windows PowerShell** and not **Windows PowerShell (x86)**.
 1. Right-click **Windows PowerShell** or activate its context menu, and then select **Run as administrator**.
 1. Make sure that the window title bar reads **Administrator** and doesn't include the text **(x86)**. This indicates that it is the 64-bit console application and that an administrator is running it.
@@ -93,7 +93,7 @@ After completing this exercise, you'll have customized the appearance of the Win
 
 ### Task 1: Find commands that'll accomplish specified tasks
 
-1. On **LON-CL1**, on the task bar, right‑click **Windows PowerShell**, and then select **Run as Administrator**.
+1. On **Windows Server 2019**, on the task bar, right‑click **Windows PowerShell**, and then select **Run as Administrator**.
 
 1. In the console, enter one of the following commands, and then press the Enter key:
 
@@ -273,7 +273,7 @@ After completing this exercise, you'll have customized the appearance of the Win
 
 ### Task 2: Run commands to accomplish specified tasks
 
-1. Ensure you are signed in on the **LON-CL1** virtual machine as **Adatum\\Administrator**.
+1. Ensure you are signed in on the **Windows Server 2019** virtual machine as **Adatum\\Administrator**.
 
 2. To display a list of enabled firewall rules, in the console, enter the following command, and then press the Enter key:
 
@@ -315,7 +315,7 @@ After completing this exercise, you'll have demonstrated your ability to find an
 
 ### Task 1: Locate and review About help files
 
-1. Ensure you're still signed in to **LON-CL1** as **Adatum\\Administrator** from the previous exercise.
+1. Ensure you're still signed in to **Windows Server 2019** as **Adatum\\Administrator** from the previous exercise.
 
 1. To find operators used for wildcard string comparison, in the console, enter the following command, and then press the Enter key:
 
