@@ -1,4 +1,4 @@
-# Lab answer key: Configuring Windows PowerShell, and finding and running commands
+# Lab answer key: Configuring Windows PowerShell
 
 ## Exercise 1: Configuring the Windows PowerShell console application
 
