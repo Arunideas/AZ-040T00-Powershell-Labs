@@ -1,3 +1,9 @@
+---
+lab:
+    title: 'Lab AnswerKey: Configuring Windows PowerShell' 
+    module: 'Module 1 Lesson 1: Getting Started with Windows PowerShell'
+--- 
+
 ### Task 1: Find commands that'll accomplish specified tasks
 
 1. On **Windows Server 2019**, on the task bar, right‑click **Windows PowerShell**, and then select **Run as Administrator**.

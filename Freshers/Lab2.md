@@ -1,3 +1,9 @@
+---
+lab:
+    title: 'Lab: Find and run commands' 
+    module: 'Module 1 Lesson 2: Find and run commands'
+--- 
+
 In this exercise, you'll use Windows PowerShell’s **Get-Help** and **Get-Command** commands to discover new commands that can complete specific tasks within Windows PowerShell. You'll also run several basic Windows PowerShell commands. In some instances, you might have to find the commands that you'll use to complete the task.
 
 The main tasks for this exercise are:
