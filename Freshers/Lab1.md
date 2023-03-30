@@ -22,9 +22,6 @@ After completing this lab, you'll be able to:
 - Find and run Windows PowerShell commands.
 - Use Windows PowerShell Help and About topics to learn new shell concepts and techniques.
 
-## Estimated time
-
-60 minutes
 
 ## Exercise 1: Configuring the Windows PowerShell console application
 
