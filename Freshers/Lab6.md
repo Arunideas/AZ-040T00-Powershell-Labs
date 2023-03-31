@@ -20,15 +20,13 @@ lab:
 
 5. Create a notepad with the name "Filenames.txt" with 5 filenames written one below the other like 
 
+```
   File1.txt
-  
   File2.txt
-  
   File3.txt
-  
   File4.txt
-
   File5.txt
+```
 
 Save this file. 
 
