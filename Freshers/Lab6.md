@@ -32,5 +32,5 @@ Save this file.
 
 Read Filenames.txt to get the filename one by one from the file and create files under c:\temp (create the folder temp if not present) 
 
-6. List all the process 
+
 
