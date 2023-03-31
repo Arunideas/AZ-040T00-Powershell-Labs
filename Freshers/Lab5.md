@@ -3,7 +3,6 @@
 1. Show the list of top 10 security eventlogs showing the properties like Time, EntryType ,instanceID and Message
 2. Show the list of top 10 process that are consuming more cpu arranged in descending order by thier name. 
 3. Show the list of unique Process Names running on your System
-4. Show the list of processes that are 
 
 
 ## Excercise Scenario 2
